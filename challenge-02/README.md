@@ -24,14 +24,16 @@ Crie uma função que adicione um valor à variável criada acima, e retorne a s
 Onde VALOR é o novo valor da variável.
 */
 function resultadoText(){
+ teste = 25;
+  return 'O valor da variável agora é ' + teste;
 
 }
 
 // Invoque a função criada acima.
-?
+? resultadoText()
 
 // Qual o retorno da função? (Use comentários de bloco).
-?
+? O valor da variável agora é 25
 
 /*
 Crie uma função com as seguintes características:
@@ -69,8 +71,23 @@ Crie uma função com as seguintes características:
 5. Se nenhum argumento for passado, retorne o valor booleano `false`.
 6. E ainda, se nenhuma das condições acima forem atendidas, retorne `null`.
 */
-?
+? function teste(x, y, z) {
+  if (x !== undefined && y === undefined && z === undefined) {
+    return x;
+  } else if (x !== undefined && y !== undefined && z === undefined) {
+    return x + y;
+  } else if (x !== undefined && y !== undefined && z !== undefined) {
+    return (x + y) / z;
+  } else if (x === undefined && y === undefined && z === undefined) {
+    return false;
+  } else {
+    return null;
+  }
+}
 
 // Invoque a função acima utilizando todas as possibilidades (com nenhum argumento, com um, com dois e com três.) Coloque um comentário de linha ao lado da função com o resultado de cada invocação.
-?
+? teste()
+teste(1)
+teste(2,5)
+teste(2,5,8)
 ```
