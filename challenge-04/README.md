@@ -7,12 +7,12 @@ um único parâmetro como argumento. Essa função deve retornar `true` se o
 equivalente booleano para o valor passado no argumento for `true`, ou `false`
 para o contrário.
 */
-? var isTruthy = function (parametro) {
+ var isTruthy = function (parametro) {
     return !!parametro;
  };
 
 // Invoque a função criada acima, passando todos os tipos de valores `falsy`.
-? isTruthy('');
+  isTruthy('');
   isTruthy(false);
   isTruthy(NaN);
   isTruthy(0);
@@ -135,38 +135,38 @@ retornar algum valor.
 
 Qual a cor atual do carro?
 */
-?
+ carro.cor; //Preta
 
 // Mude a cor do carro para vermelho.
-?
+ carro.mudarCor('Vermelho'); // Vermelho
 
 // E agora, qual a cor do carro?
-?
+ carro.cor; //Vermelho
 
 // Mude a cor do carro para verde musgo.
-?
+ carro.mudarCor('verde musgo'); // verde musgo
 
 // E agora, qual a cor do carro?
-?
+ carro.cor; // verde musgo
 
 // Qual a marca e modelo do carro?
-?
+ carro.obterMarcaModelo(); // Esse carro é um GM LTZ
 
 // Adicione 2 pessoas no carro.
-?
+ carro.adicionarPessoasCarro(2);
 
 // Adicione mais 4 pessoas no carro.
-?
+ carro.adicionarPessoasCarro(4); // "Só cabem mais 3 pessoas!
 
 // Faça o carro encher.
-?
+ carro.adicionarPessoasCarro(3); Já temos 5 pessoas no carro!
 
 // Tire 4 pessoas do carro.
-?
+ carro.adicionarPessoasCarro(-4); //Já temos 1 pessoas no carro!
 
 // Adicione 10 pessoas no carro.
-?
+ carro.adicionarPessoas(10); // // "Só cabem mais 4 pessoas!"
 
 // Quantas pessoas temos no carro?
-?
+// carro.quantidadePessoas; 1
 ```
